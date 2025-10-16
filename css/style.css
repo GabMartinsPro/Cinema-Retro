@@ -53,13 +53,12 @@ body {
     letter-spacing: 2px;
 }
 
-/* CADEIRAS: Caminho Corrigido (relativo ao style.css) */
+/* CADEIRAs */
 .parallax-chairs {
     background-image: url('cadeira.jpg'); 
     background-position: center bottom; 
 }
 
-/* --- ESPAÇADOR (Substitui o Parallax de Cortinas) --- */
 .spacer {
     height: 15vh; /* Um pouco de espaço para respirar entre os gêneros */
 }
@@ -103,5 +102,5 @@ body {
     opacity: 1; 
 }
 .retro-light-section.active {
-    box-shadow: 0 0 40px 5px rgba(255, 215, 0, 0.4); 
+    box-shadow: 0 0 40px 5px rgba(228, 194, 2, 0.89); 
 }

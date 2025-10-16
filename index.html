@@ -11,7 +11,7 @@
 <body>
 
     <header class="fixed-header">
-        <div class="header-content">
+        <div class="header-content"><!-- conteudo header-->
             <h1 class="logo">MOVIE TALK</h1>
             
             <nav class="blank-nav">
@@ -26,7 +26,7 @@
                 <input type="text" placeholder="Buscar um filme no telão..." aria-label="Barra de busca">
                 <button type="submit">🔎</button>
             </div>
-        </div>
+        </div> <!-- fim-conteudo header-->
     </header>
 
     <div class="parallax-section parallax-chairs">
@@ -37,16 +37,32 @@
 
         <section id="acao" class="genre-section retro-light-section">
             <h2>AÇÃO</h2>
-            <div class="movie-list">
-                <div class="movie-card">
-                    <img src="banners/acao1.jpg" alt="Banner O Último Herói" class="movie-banner">
-                    <h3>O Último Herói</h3>
-                    <p class="rating">⭐️ 9.1</p>
+            <div class="movie-list"> <!--Lista de filmes-->
+                <div class="movie-card"> 
+                    <a href="compra.html"><img src="img/terminator.jpg" alt="O Exterminador do futuro" class="movie-banner"></a>
+                    <h3>O Exterminador do Futuro</h3>
+                    <p class="rating">⭐️ 8.6</p>
                 </div>
                 <div class="movie-card">
-                    <img src="banners/acao2.jpg" alt="Banner Velocidade Máxima" class="movie-banner">
+                    <a href="compra.html"><img src="img/velocidade.jpg" alt="Banner Velocidade Máxima" class="movie-banner"></a>
                     <h3>Velocidade Máxima</h3>
-                    <p class="rating">⭐️ 8.8</p>
+                    <p class="rating">⭐️ 7.3</p>
+                </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+        <section id="Animacao" class="genre-section retro-light-section">
+            <h2>Animação</h2>
+            <div class="movie-list"> <!--Lista de filmes-->
+                <div class="movie-card"> 
+                    <a href="compra.html"> <img src="img/cars.jpg" alt="Banner Carros" class="movie-banner"></a>
+                    <h3>Carros</h3>
+                    <p class="rating">⭐️ 7.3</p>
+                </div>
+                <div class="movie-card">
+                    <a href="compra.html"> <img src="img/shrek.jpg" alt="banner shrek" class="movie-banner"></a>
+                    <h3>Shrek</h3>
+                    <p class="rating">⭐️ 7.9</p>
                 </div>
             </div>
         </section>
@@ -57,13 +73,14 @@
             <h2>DRAMA</h2>
             <div class="movie-list">
                 <div class="movie-card">
-                    <img src="banners/drama1.jpg" alt="Banner O Tempo Perdido" class="movie-banner">
-                    <h3>O Tempo Perdido</h3>
-                    <p class="rating">⭐️ 9.5</p>
+                    <a href="compra.html">
+                        <img src="img/iluminado.jpg" alt="Banner O iluminado" class="movie-banner"></a>
+                    <h3>O Iluminado</h3>
+                    <p class="rating">⭐️ 8.4</p>
                 </div>
-                <div class="movie-card">
-                    <img src="banners/drama2.jpg" alt="Banner A Dança da Chuva" class="movie-banner">
-                    <h3>A Dança da Chuva</h3>
+                <div class="movie-card"><a href="compra.html">
+                    <img src="img/cbluta.jpg" alt="Banner Clube da Luta" class="movie-banner"></a>
+                    <h3>Clube da Luta</h3>
                     <p class="rating">⭐️ 9.0</p>
                 </div>
             </div>
@@ -75,16 +92,16 @@
             <h2>FICÇÃO CIENTÍFICA</h2>
             <div class="movie-list">
                 <div class="movie-card">
-                    <img src="banners/ficcao1.jpg" alt="Banner O Olho do Futuro" class="movie-banner">
-                    <h3>O Olho do Futuro</h3>
-                    <p class="rating">⭐️ 9.3</p>
+                    <a href="compra.html"><img src="img/HPbanner.jpg" alt="HP Banner" class="movie-banner"></a>
+                    <h3>Harry Potter: E a pedra Filosofal</h3>
+                    <p class="rating">⭐️ 7.7</p>
                 </div>
-                <div class="movie-card">
-                    <img src="banners/ficcao2.jpg" alt="Banner Nave Mãe" class="movie-banner">
-                    <h3>Nave Mãe</h3>
+                <div class="movie-card"><a href="compra.html">
+                    <img src="img/Senhordosa.jpg" alt="Banner Senhor dos aneis" class="movie-banner"></a>
+                    <h3>Senhor dos Aneis</h3>
                     <p class="rating">⭐️ 8.9</p>
                 </div>
-            </div>
+            </div> <!-- fim-Lista de filmes-->
         </section>
         
         <div class="spacer"></div>
@@ -93,12 +110,12 @@
             <h2>COMÉDIA</h2>
             <div class="movie-list">
                 <div class="movie-card">
-                    <img src="banners/comedia1.jpg" alt="Banner A Grande Confusão" class="movie-banner">
+                    <a href="compra.html"><img src="banners/comedia1.jpg" alt="Banner A Grande Confusão" class="movie-banner"></a>
                     <h3>A Grande Confusão</h3>
                     <p class="rating">⭐️ 8.5</p>
                 </div>
                 <div class="movie-card">
-                    <img src="banners/comedia2.jpg" alt="Banner Férias no Havai" class="movie-banner">
+                    <a href="compra.html"> <img src="banners/comedia2.jpg" alt="Banner Férias no Havai" class="movie-banner"></a>
                     <h3>Férias no Havaí</h3>
                     <p class="rating">⭐️ 8.2</p>
                 </div>
@@ -111,14 +128,14 @@
             <h2>TERROR</h2>
             <div class="movie-list">
                 <div class="movie-card">
-                    <img src="banners/terror1.jpg" alt="Banner A Casa do Pesadelo" class="movie-banner">
+                    <a href="compra.html"> <img src="banners/terror1.jpg" alt="Banner A Casa do Pesadelo" class="movie-banner"></a>
                     <h3>A Casa do Pesadelo</h3>
                     <p class="rating">⭐️ 7.9</p>
                 </div>
-                <div class="movie-card">
+                <div class="movie-card"><a href="compra.html">
                     <img src="banners/terror2.jpg" alt="Banner Sombras da Meia Noite" class="movie-banner">
                     <h3>Sombras da Meia-Noite</h3>
-                    <p class="rating">⭐️ 7.5</p>
+                    <p class="rating">⭐️ 7.5</p></a>
                 </div>
             </div>
         </section>
