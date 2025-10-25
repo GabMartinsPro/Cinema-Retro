@@ -1,0 +1,282 @@
+/* --- VARIAVEIS E RESET --- */
+:root {
+    --bg-color: #0c0101; 
+    --accent-color: #ffcc00; /* Dourado/Âmbar */
+    --text-color: #f0f0f0; 
+    --retro-red: #8b0000; 
+    --menu-bg: #1a0a0a; /* Fundo mais escuro para o menu */
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Cinzel", sans-serif;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 120px; /* Mantém o espaço para o cabeçalho fixo */
+}
+
+/* ------------------ MENU LATERAL (NOVO) ------------------ */
+.menu-lateral {
+    height: 100%;
+    width: 0; /* Começa fechado */
+    position: fixed;
+    z-index: 2000; /* Acima de tudo */
+    top: 0;
+    left: 0;
+    background-color: var(--menu-bg);
+    overflow-x: hidden;
+    transition: 0.5s; /* Animação suave */
+    padding-top: 60px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.menu-lateral a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: var(--accent-color);
+}
+
+.menu-lateral .fechar-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-lateral h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ------------------ CABEÇALHO FIXO ------------------ */
+.cabecalho-fixo {
+    position: fixed; top: 0; left: 0; width: 100%;
+    background-color: var(--retro-red); 
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    border-bottom: 5px solid var(--accent-color); 
+}
+.conteudo-cabecalho {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 40px;
+    /* Adicionado para centralizar a barra de busca no mobile */
+    flex-wrap: wrap; 
+}
+.logotipo {
+    font-family: 'Cinzel', serif; font-size: 2.2em;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Mantido centralizado no desktop, mas será reajustado em mobile */
+}
+
+/* Desktop Navigation (Oculta em Mobile) */
+.nav-principal-desktop ul { 
+    list-style: none; 
+    display: flex; 
+}
+.nav-principal-desktop ul li a { 
+    color: var(--text-color); 
+    text-decoration: none; 
+    margin: 0 15px; 
+    transition: color 0.3s; 
+}
+.nav-principal-desktop ul li a:hover { 
+    color: var(--accent-color); 
+}
+/* Placeholder para manter o logo centrado */
+.placeholder-nav {
+    width: 210px; /* Ajuste para ter a largura da navegação */
+    height: 0;
+}
+
+/* Botão do menu lateral (escondido no desktop) */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px 0 0;
+}
+
+/* Barra de busca (Ajustada para ficar no meio no mobile) */
+.barra-busca {
+    flex-grow: 1; /* Permite que ocupe o espaço central */
+    text-align: center;
+    padding: 10px 0;
+}
+.barra-busca input { 
+    padding: 8px; 
+    border: none; 
+    border-radius: 4px 0 0 4px;
+    width: 60%; /* Ajuste a largura da busca */
+    max-width: 400px;
+}
+.barra-busca button { 
+    padding: 8px 15px; 
+    background-color: var(--accent-color); 
+    color: var(--bg-color); 
+    border: none; 
+    border-radius: 0 4px 4px 0; 
+    cursor: pointer; 
+}
+
+/* ------------------ BANNER PRINCIPAL ------------------ */
+.banner-principal {
+    margin-top: -5px; /* Compensa a borda para ficar justo ao header */
+}
+.banner-principal img {
+    /* Garante que ocupe 100% da largura visível */
+    width: 100vw; 
+    height: auto;
+    display: block;
+}
+
+/* ------------------ CONTEÚDO PRINCIPAL ------------------ */
+.conteudo-principal { 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+.espacador {
+    height: 15vh;
+}
+
+.secao-genero {
+    margin: 40px 0;
+    padding: 40px; 
+    border: 1px solid #333;
+    background-color: #151515; 
+    position: relative; 
+    overflow: hidden; 
+    transition: box-shadow 0.5s ease;
+}
+
+.lista-filmes { 
+    display: flex; 
+    gap: 30px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+.cartao-filme {
+    background-color: #2a2a2a; padding: 10px; border-radius: 8px;
+    width: 200px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.banner-filme {
+    width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;
+    border: 2px solid var(--accent-color); 
+}
+.cartao-filme h3 { color: var(--accent-color); margin-bottom: 5px; }
+.avaliacao { font-weight: bold; }
+
+
+/* ------------------ EFEITO DE LUZ RETRÔ (NOVO) ------------------ */
+.retro-secao-clara::before {
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    
+    background: radial-gradient(circle at center, 
+        rgba(255, 215, 0, 0.25) 0%, 
+        rgba(255, 140, 0, 0.1) 50%,  
+        transparent 70% 
+    );
+    
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+    z-index: 1; 
+}
+
+.retro-secao-clara:hover::before {
+    opacity: 1; 
+}
+
+.retro-secao-clara:hover {
+    box-shadow: 0 0 50px 10px rgba(255, 215, 0, 0.7); 
+}
+
+/* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
+@media (max-width: 768px) {
+    
+    body {
+        padding-top: 180px; /* Mais espaço para acomodar o header de 2 linhas */
+    }
+
+    /* 1. Header Fixo: Layout em duas linhas */
+    .conteudo-cabecalho {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    /* 2. Menu Hamburguer (Exibir) */
+    .menu-hamburguer {
+        display: block;
+        order: 1; /* Primeira posição */
+    }
+
+    /* 3. Logotipo (Ajustar posição no mobile) */
+    .logotipo {
+        order: 2; /* Segunda posição */
+        font-size: 1.8em;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    /* 4. Barra de Busca (Centralizada na segunda linha) */
+    .barra-busca {
+        order: 4; /* Última posição, na linha de baixo */
+        padding: 5px 0;
+        width: 100%;
+    }
+    .barra-busca input {
+        width: 80%;
+    }
+
+    /* 5. Navegação Desktop (Esconder) */
+    .nav-principal-desktop {
+        display: none;
+    }
+    .placeholder-nav {
+        display: none;
+    }
+    
+    /* 6. Listas de Filmes (Ajustar para 1 ou 2 por linha) */
+    .lista-filmes {
+        gap: 15px;
+        justify-content: space-around;
+    }
+    .cartao-filme {
+        width: 45%; /* Permite 2 filmes por linha */
+        max-width: 180px;
+    }
+
+    /* 7. Banner (Ajustar altura no mobile) */
+    .banner-principal img {
+        height: auto;
+    }
+}

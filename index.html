@@ -1,147 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Talk - Cine Retrô Vintage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Limelight&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="fixed-header">
-        <div class="header-content"><!-- conteudo header-->
-            <h1 class="logo">MOVIE TALK</h1>
+    <div class="menu-lateral" id="menuLateral">
+        <a href="javascript:void(0)" class="fechar-btn" onclick="fecharMenu()">&times;</a>
+        <h2>Navegação</h2>
+        <a href="#">Catálogo</a>
+        <a href="pages/em breve/em breve.html">Em Breve</a>
+        <a href="#">Contato</a>
+        <a href="#">Minha Conta</a>
+        <a href="#">Ajuda</a>
+    </div>
+
+    <header class="cabecalho-fixo">
+        <div class="conteudo-cabecalho">
+            <button class="menu-hamburguer" onclick="abrirMenu()">
+                &#9776; </button>
             
-            <nav class="blank-nav">
+            <h1 class="logotipo">MOVIE TALK</h1>
+
+            <nav class="nav-principal-desktop">
                 <ul>
                     <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Em Breve</a></li>
+                    <li><a href="pages/em breve/em breve.html">Em Breve</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
 
-            <div class="search-bar">
+            <div class="barra-busca">
                 <input type="text" placeholder="Buscar um filme no telão..." aria-label="Barra de busca">
                 <button type="submit">🔎</button>
             </div>
-        </div> <!-- fim-conteudo header-->
+            <div class="placeholder-nav"></div>
+        </div>
     </header>
 
-    <div class="parallax-section parallax-chairs">
-        <p>Prepare-se para a magia do cinema.</p>
+    <div class="banner-principal">
+        <img src="assets/media/bannerzinho.png" alt="Movie Talk - Noite de Cinema Todos os sábados!" style="width: 100%; height: auto; display: block;">
     </div>
+    
+    <main class="conteudo-principal">
 
-    <main class="main-content">
-
-        <section id="acao" class="genre-section retro-light-section">
+        <section id="acao" class="secao-genero retro-secao-clara">
             <h2>AÇÃO</h2>
-            <div class="movie-list"> <!--Lista de filmes-->
-                <div class="movie-card"> 
-                    <a href="compra.html"><img src="img/terminator.jpg" alt="O Exterminador do futuro" class="movie-banner"></a>
+            <div class="lista-filmes">
+                <div class="cartao-filme">
+                    <a href="compra.html"><img src="assets/media/terminator.jpg" alt="O Exterminador do futuro"
+                                class="banner-filme"></a>
                     <h3>O Exterminador do Futuro</h3>
-                    <p class="rating">⭐️ 8.6</p>
+                    <p class="avaliacao">⭐️ 8.6</p>
                 </div>
-                <div class="movie-card">
-                    <a href="compra.html"><img src="img/velocidade.jpg" alt="Banner Velocidade Máxima" class="movie-banner"></a>
+                <div class="cartao-filme">
+                    <a href="compra.html"><img src="assets/media/velocidade.jpg" alt="Banner Velocidade Máxima"
+                                class="banner-filme"></a>
                     <h3>Velocidade Máxima</h3>
-                    <p class="rating">⭐️ 7.3</p>
+                    <p class="avaliacao">⭐️ 7.3</p>
                 </div>
             </div>
         </section>
-        <div class="spacer"></div>
-        <section id="Animacao" class="genre-section retro-light-section">
+        <div class="espacador"></div>
+        <section id="animacao" class="secao-genero retro-secao-clara">
             <h2>Animação</h2>
-            <div class="movie-list"> <!--Lista de filmes-->
-                <div class="movie-card"> 
-                    <a href="compra.html"> <img src="img/cars.jpg" alt="Banner Carros" class="movie-banner"></a>
+            <div class="lista-filmes">
+                <div class="cartao-filme">
+                    <a href="compra.html"> <img src="assets/media/cars.jpg" alt="Banner Carros" class="banner-filme"></a>
                     <h3>Carros</h3>
-                    <p class="rating">⭐️ 7.3</p>
+                    <p class="avaliacao">⭐️ 7.3</p>
                 </div>
-                <div class="movie-card">
-                    <a href="compra.html"> <img src="img/shrek.jpg" alt="banner shrek" class="movie-banner"></a>
+                <div class="cartao-filme">
+                    <a href="compra.html"> <img src="assets/media/shrek.jpg" alt="banner shrek" class="banner-filme"></a>
                     <h3>Shrek</h3>
-                    <p class="rating">⭐️ 7.9</p>
+                    <p class="avaliacao">⭐️ 7.9</p>
                 </div>
             </div>
         </section>
 
-        <div class="spacer"></div> 
+        <div class="espacador"></div>
 
-        <section id="drama" class="genre-section retro-light-section">
+        <section id="drama" class="secao-genero retro-secao-clara">
             <h2>DRAMA</h2>
-            <div class="movie-list">
-                <div class="movie-card">
+            <div class="lista-filmes">
+                <div class="cartao-filme">
                     <a href="compra.html">
-                        <img src="img/iluminado.jpg" alt="Banner O iluminado" class="movie-banner"></a>
+                        <img src="assets/media/iluminado.jpg" alt="Banner O iluminado" class="banner-filme"></a>
                     <h3>O Iluminado</h3>
-                    <p class="rating">⭐️ 8.4</p>
+                    <p class="avaliacao">⭐️ 8.4</p>
                 </div>
-                <div class="movie-card"><a href="compra.html">
-                    <img src="img/cbluta.jpg" alt="Banner Clube da Luta" class="movie-banner"></a>
+                <div class="cartao-filme"><a href="compra.html">
+                        <img src="assets/media/cbluta.jpg" alt="Banner Clube da Luta" class="banner-filme"></a>
                     <h3>Clube da Luta</h3>
-                    <p class="rating">⭐️ 9.0</p>
+                    <p class="avaliacao">⭐️ 9.0</p>
                 </div>
             </div>
         </section>
 
-        <div class="spacer"></div>
+        <div class="espacador"></div>
 
-        <section id="ficcao" class="genre-section retro-light-section">
+        <section id="ficcao" class="secao-genero retro-secao-clara">
             <h2>FICÇÃO CIENTÍFICA</h2>
-            <div class="movie-list">
-                <div class="movie-card">
-                    <a href="compra.html"><img src="img/HPbanner.jpg" alt="HP Banner" class="movie-banner"></a>
+            <div class="lista-filmes">
+                <div class="cartao-filme">
+                    <a href="compra.html"><img src="assets/media/HPbanner.jpg" alt="HP Banner" class="banner-filme"></a>
                     <h3>Harry Potter: E a pedra Filosofal</h3>
-                    <p class="rating">⭐️ 7.7</p>
+                    <p class="avaliacao">⭐️ 7.7</p>
                 </div>
-                <div class="movie-card"><a href="compra.html">
-                    <img src="img/Senhordosa.jpg" alt="Banner Senhor dos aneis" class="movie-banner"></a>
+                <div class="cartao-filme"><a href="compra.html">
+                        <img src="assets/media/Senhordosa.jpg" alt="Banner Senhor dos aneis" class="banner-filme"></a>
                     <h3>Senhor dos Aneis</h3>
-                    <p class="rating">⭐️ 8.9</p>
+                    <p class="avaliacao">⭐️ 8.9</p>
                 </div>
-            </div> <!-- fim-Lista de filmes-->
+            </div>
         </section>
-        
-        <div class="spacer"></div>
 
-        <section id="comedia" class="genre-section retro-light-section">
+        <div class="espacador"></div>
+
+        <section id="comedia" class="secao-genero retro-secao-clara">
             <h2>COMÉDIA</h2>
-            <div class="movie-list">
-                <div class="movie-card">
-                    <a href="compra.html"><img src="banners/comedia1.jpg" alt="Banner A Grande Confusão" class="movie-banner"></a>
+            <div class="lista-filmes">
+                <div class="cartao-filme">
+                    <a href="compra.html"><img src="banners/comedia1.jpg" alt="Banner A Grande Confusão"
+                                class="banner-filme"></a>
                     <h3>A Grande Confusão</h3>
-                    <p class="rating">⭐️ 8.5</p>
+                    <p class="avaliacao">⭐️ 8.5</p>
                 </div>
-                <div class="movie-card">
-                    <a href="compra.html"> <img src="banners/comedia2.jpg" alt="Banner Férias no Havai" class="movie-banner"></a>
+                <div class="cartao-filme">
+                    <a href="compra.html"> <img src="banners/comedia2.jpg" alt="Banner Férias no Havai"
+                                class="banner-filme"></a>
                     <h3>Férias no Havaí</h3>
-                    <p class="rating">⭐️ 8.2</p>
+                    <p class="avaliacao">⭐️ 8.2</p>
                 </div>
             </div>
         </section>
 
-        <div class="spacer"></div>
+        <div class="espacador"></div>
 
-        <section id="terror" class="genre-section retro-light-section">
+        <section id="terror" class="secao-genero retro-secao-clara">
             <h2>TERROR</h2>
-            <div class="movie-list">
-                <div class="movie-card">
-                    <a href="compra.html"> <img src="banners/terror1.jpg" alt="Banner A Casa do Pesadelo" class="movie-banner"></a>
+            <div class="lista-filmes">
+                <div class="cartao-filme">
+                    <a href="compra.html"> <img src="banners/terror1.jpg" alt="Banner A Casa do Pesadelo"
+                                class="banner-filme"></a>
                     <h3>A Casa do Pesadelo</h3>
-                    <p class="rating">⭐️ 7.9</p>
+                    <p class="avaliacao">⭐️ 7.9</p>
                 </div>
-                <div class="movie-card"><a href="compra.html">
-                    <img src="banners/terror2.jpg" alt="Banner Sombras da Meia Noite" class="movie-banner">
-                    <h3>Sombras da Meia-Noite</h3>
-                    <p class="rating">⭐️ 7.5</p></a>
+                <div class="cartao-filme"><a href="compra.html">
+                        <img src="banners/terror2.jpg" alt="Banner Sombras da Meia Noite" class="banner-filme">
+                        <h3>Sombras da Meia-Noite</h3>
+                        <p class="avaliacao">⭐️ 7.5</p>
+                    </a>
                 </div>
             </div>
         </section>
-        
     </main>
-
-    <script src="assets/scripts/script.js"></script> 
 </body>
+<script src="script.js"></script>
 </html>
