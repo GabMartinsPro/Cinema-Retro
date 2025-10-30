@@ -194,14 +194,139 @@ body {
 }
 
 section{
-    padding: 2rem 9%;
+    padding: 2rem 5%;
+}
+
+section h3 span p{
+    font-family: "Creepster", system-ui;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 0.5rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background: var(--retro-red);
 }
 
 #home{
     display: flex;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
     background: url("../../assets/media/banner-horror.jpg") no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#home .content{
+    max-width: 100rem;
+}
+
+#home .content h3{
+    font-size: 4rem;
+    color: var(--retro-red);
+    font-family: "Creepster", system-ui;
+}
+
+#home .content span{
+    font-size: 1.4rem;
+    color: var(--retro-red);
+    padding: 1rem 0;
+    line-height: 1.0;
+}
+
+#home .content p{
+    font-size: 0.9rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+/* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
+@media (max-width: 768px) {
+    #home{
+        background-image: none;
+    }
+    
+    body {
+        padding-top: 180px; 
+        background-color: #000000 ;
+    }
+
+    /* 1. Header Fixo: Layout em duas linhas */
+    .conteudo-cabecalho {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    /* 2. Menu Hamburguer (Exibir) */
+    .menu-hamburguer {
+        display: block;
+        order: 1; 
+    }
+
+    /* 3. Logotipo (Ajustar posição no mobile) */
+    .logotipo {
+        order: 2; 
+        font-size: 1.8em;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    /* 4. Barra de Busca (Centralizada na segunda linha) */
+    .barra-busca {
+        order: 4; 
+        padding: 5px 0;
+        width: 100%;
+    }
+    .barra-busca input {
+        width: 80%;
+    }
+
+    /* 5. Navegação Desktop (Esconder) */
+    .nav-principal-desktop {
+        display: none;
+    }
+    .placeholder-nav {
+        display: none;
+    }
+}
+
+/* Estilo do Botão de Expansão */
+.botao-expansao {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.botao-expansao:hover {
+    background-color: #ffd966;
+}
+
+/* Classe que o JS adicionará para esconder o botão */
+.botao-expansao.oculto {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
 }
