@@ -4,26 +4,56 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compras</title>
-    <link rel="stylesheet" href="compra.css">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Limelight&display=swap" rel="stylesheet">
 
 </head>
 <body>
-      <section id="exterminador">
-                <div>
-                    <h3>O EXTERMINADOR DO FUTURO</h3>
-                    <p>lorem e qwe dd ipsum.....</p>
-                </div>
-             </section>
-             <div class="espacador"></div>
+      <div class="menu-lateral" id="menuLateral"> <!--Menu lateral-->
+        <a href="javascript:void(0)" class="fechar-btn" onclick="fecharMenu()">&times;</a>
+        <h2>Navegação</h2>
+        <a href="pages/Catalogo/catalogo.html">Catálogo</a>
+        <a href="pages/em breve/em breve.html">Em Breve</a>
+        <a href="pages/news/news.html">News</a>
+        <a href="#">Contato</a>
+        <a href="#">Ajuda</a>
+                  </div><!--fim Menu lateral-->
+        
+           <header class="cabecalho-fixo"> <!--Cabeçalho-->
+        <div class="conteudo-cabecalho">
+            <button class="menu-hamburguer" onclick="abrirMenu()">
+                &#9776; </button>
+            
+            <h1 class="logotipo">MOVIE TALK</h1>
 
-             <section id="shrek">
-                <div>
-                    <h3>Shrek</h3>
-                    <p>lorem ipsum.....</p>
-                </div>
-             </section>
-        </main>
-        <!-- termina aqui-->
+            <nav class="nav-principal-desktop">
+                <ul>
+                    <li class="dropdown-categoria">
+                        <a href="#">Categorias</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#acao">Ação</a></li>
+                            <li><a href="#animacao">Animação</a></li>
+                            <li><a href="#drama">Drama</a></li>
+                            <li><a href="#ficcao">Ficção Científica</a></li>
+                            <li><a href="#comedia">Comédia</a></li>
+                            <li><a href="#terror">Terror</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="pages/Catálogo/catalogo.html">Catálogo</a></li>
+                    <li><a href="pages/em breve/em breve.html">Em Breve</a></li>
+                    <li><a href="pages/news/news.html">News</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="barra-busca"><!--barra busca-->
+                <input type="text" placeholder="Buscar um filme no telão..." aria-label="Barra de busca">
+                <button type="submit">🔎</button>
+            </div><!--fim barra busca-->
+            <div class="placeholder-nav"></div>
+        </div>
+        </header><!--fim cabeçalho-->
 </body>
 </html>
