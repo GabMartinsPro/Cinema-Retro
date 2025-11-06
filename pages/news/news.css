@@ -265,9 +265,10 @@ section h3 span p{
 }
 
 .introduction .row{
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     padding: 2rem 0;
     padding-bottom: 3rem;
@@ -276,7 +277,7 @@ section h3 span p{
 
 .introduction .row .image{
     flex: 1 1 40rem;
-    position: relative;
+    position: absolute;
 }
 
 .introduction .row .image .img{
@@ -288,19 +289,21 @@ section h3 span p{
     object-fit: cover;
 }
 
-.introduction .row .image .h3{
-    position: absolute;
+.introduction .row .h3{
+    display: flex;
     top: 50%; transform: translateY(-50%);
     font-size: 3rem;
     background: #fff;
     width: 100%;
     padding: 1rem 2rem;
-
+    
 }
 
 .introduction .row .content{
     flex: 1 1 40rem;
+    margin-left: 50%;
 }
+
 /*Fim do heading*/
 
 
@@ -313,6 +316,10 @@ section h3 span p{
     body {
         padding-top: 180px; 
         background-color: #000000 ;
+    }
+
+    .introduction .row .image .img{
+        display: none;
     }
 
     /* 1. Header Fixo: Layout em duas linhas */
