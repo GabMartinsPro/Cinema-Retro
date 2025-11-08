@@ -14,8 +14,11 @@
   font-family: "Cinzel", sans-serif;
 }
 .background{
-  padding-top: 1.5;
+  padding-top: 1.5rem;
   padding: 1%;
+  text-align: center;
+
+ 
 }
 
 body {
