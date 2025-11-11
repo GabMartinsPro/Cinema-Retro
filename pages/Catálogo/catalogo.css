@@ -192,3 +192,34 @@ body {
     border-radius: 0 4px 4px 0; 
     cursor: pointer; 
 }
+
+/* Filme o exterminador */
+
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/img\ o\ exterminador.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100px;
+}
+.info-filme-exterminador {
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17%;     
+    left: 62%;
+    
+}
+h3 {
+    color: #893737;
+    font-size: 80px;
+    text-align: end;
+    text-align: right;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 3px 3px 7px black;
+    margin-top: 70px;
+}
+
