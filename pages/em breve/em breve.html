@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
-    <link rel="stylesheet" href="catalogo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Limelight&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="embreve.css">
+<title>EM BREVE</title>
 </head>
 <body>
-
-      <div class="menu-lateral" id="menuLateral"> <!--Menu lateral-->
+    
+    <div class="menu-lateral" id="menuLateral"> <!--Menu lateral-->
         <a href="javascript:void(0)" class="fechar-btn" onclick="fecharMenu()">&times;</a>
         <h2>Navegação</h2>
-        <a href="pages/Catalogo/catalogo.html">Catálogo</a>
+        <a href="pages/Catálogo/catalogo.html">Catálogo</a>
         <a href="pages/em breve/em breve.html">Em Breve</a>
         <a href="pages/news/news.html">News</a>
         <a href="#">Contato</a>
@@ -44,8 +42,7 @@
                             <li><a href="#terror">Terror</a></li>
                         </ul>
                         </li>
-                    <li><a href="pages/Catálogo/catalogo.html">Catálogo</a></li>
-                    <li><a href="pages/em breve/em breve.html">Em Breve</a></li>
+                    <li><a href="#">Catálogo</a></li>
                     <li><a href="pages/news/news.html">News</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
@@ -53,34 +50,65 @@
             <div class="barra-busca"><!--barra busca-->
                 <input type="text" placeholder="Buscar um filme no telão..." aria-label="Barra de busca">
                 <button type="submit">🔎</button>
-            </div><!--fim barra busca-->
+            </div><!--fiom barra busca-->
             <div class="placeholder-nav"></div>
         </div>
-        </header><!--fim cabeçalho-->
-
-
-        <!--Inicio do catálogo-->
-
-
-        <!--Filme 1-->
-        <section id="exterminador"><br>
-            <div class="info-filme-exterminador">
-                <div>
-                    <h3>O exterminador</h3>
-                    <p class="sinopse">Sinopse</p>
-                    <p class="elenco">Elenco</p>
-                    <p class="duração">Duração e data de Lançamento</p>
-                    <p class="genero">Genero</p>
-                    <p class="avaliação">Avaliação</p>
-                    <p class="classificação">Classificação Indicativa</p>
-                </div>
-            </div>
-    
-
-        </section>
+        </header><!-- fim Cabeçalho-->
 
         
+<section class="carrossel-retro">
+  <h2>🎞️ Filmes Indicados do Mês</h2>
+  <div class="filmes-container">
+    
+    <div class="filme-retro">
+      <img src="img/Titanic-Movie-Poster-1997.jpg" alt="Titanic">
+      <div class="descricao">
+        <h3>Titanic <span>(1997)</span></h3>
+        <p>Um amor proibido nasce no navio mais luxuoso — e trágico — da história do cinema.</p>
+      </div>
+    </div>
 
+    <div class="filme-retro">
+      <img src="img/back-to-the-future.jpg" alt="De Volta para o Futuro">
+      <div class="descricao">
+        <h3>De Volta Para o Futuro <span>(1985)</span></h3>
+        <p>Um adolescente acidentalmente volta no tempo e precisa unir seus pais no passado.</p>
+      </div>
+    </div>
+
+    <div class="filme-retro">
+      <img src="img/scale_94836b97.jpg" alt="Star Wars A Ameaça Fantasma">
+      <div class="descricao">
+        <h3>Star Wars: A Ameaça Fantasma <span>(1999)</span></h3>
+        <p>O jovem Anakin Skywalker descobre seu poder e muda o destino da galáxia.</p>
+      </div>
+    </div>
+
+    <div class="filme-retro">
+      <img src="img/download.jpg" alt="Jurassic Park">
+      <div class="descricao">
+        <h3>Jurassic Park <span>(1993)</span></h3>
+        <p>Um parque de dinossauros ganha vida — e sai totalmente do controle.</p>
+      </div>
+    </div>
+
+    <div class="filme-retro">
+      <img src="img/p11724_v_h8_aa.jpg" alt="Batman">
+      <div class="descricao">
+        <h3>Batman <span>(1989)</span></h3>
+        <p>Gotham mergulha no caos quando o Cavaleiro das Trevas enfrenta o Coringa.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<form action="/search" method="get">
+  <input type="text" name="q" placeholder="Pesquise por filmes..." required>
+  <button type="submit">🔎 </button>
+</form>
+
+  
 </body>
-<script src="/script.js"></script>
 </html>

@@ -1,0 +1,121 @@
+[
+{ 
+    "nome": "O Exterminador do Futuro", 
+  "imagem": "assets/media/terminator.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+{ "nome": "Velocidade Máxima", 
+  "imagem": "assets/media/velocidade.jpg", 
+  "link": "pages/Catálogo/catalogo.html"
+ },
+{ 
+    "nome": "Duro de Matar", 
+  "imagem": "assets/media/terminator.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+  { "nome": "Máquina Mortífera", 
+  "imagem": "assets/media/velocidade.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+  { "nome": "Carros", 
+  "imagem": "assets/media/cars.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+  { "nome": "Shrek", 
+  "imagem": "assets/media/shrek.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+  { "nome": "Toy Story", 
+  "imagem": "assets/media/cars.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+  { "nome": "Vida de Inseto", 
+  "imagem": "assets/media/shrek.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "O Iluminado", 
+  "imagem": "assets/media/iluminado.jpg", 
+  "link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "Clube da Luta", 
+"imagem": "assets/media/cbluta.jpg", 
+"link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "Um Sonho de Liberdade", 
+    "imagem": "assets/media/iluminado.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "Forrest Gump", 
+    "imagem": "assets/media/cbluta.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "Harry Potter: E a Pedra Filosofal", 
+    "imagem": "assets/media/HPbanner.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Senhor dos Anéis", 
+    "imagem": "assets/media/Senhordosa.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Matrix", 
+    "imagem": "assets/media/HPbanner.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Blade Runner", 
+    "imagem": "assets/media/Senhordosa.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "A Grande Confusão", 
+    "imagem": "banners/comedia1.jpg", 
+    "link": "pages/Catálogo/catalogo.html" },
+  { 
+    "nome": "Férias no Havaí", 
+    "imagem": "banners/comedia2.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Feitiço do Tempo", 
+    "imagem": "banners/comedia1.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+{ 
+    "nome": "O Clube dos Cinco", 
+    "imagem": "banners/comedia2.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "A Casa do Pesadelo", 
+    "imagem": "banners/terror1.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Sombras da Meia-Noite", 
+    "imagem": "banners/terror2.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Sexta-Feira 13", 
+    "imagem": "banners/terror1.jpg", 
+    "link": "pages/Catálogo/catalogo.html" 
+},
+  { 
+    "nome": "Halloween", 
+    "imagem": "banners/terror2.jpg", 
+    "link": "pages/Catálogo/catalogo.html"
+},
+{
+    "nome": "Star Wars: A Ameaça Fantasma", 
+    "imagem": "pages/em breve/img/star3.jpg", 
+    "link": "pages/Catálogo/catalogo.html"
+}
+
+]
