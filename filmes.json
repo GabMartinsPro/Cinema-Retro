@@ -116,6 +116,11 @@
     "nome": "Star Wars: A Ameaça Fantasma", 
     "imagem": "pages/em breve/img/star3.jpg", 
     "link": "pages/Catálogo/catalogo.html"
-}
+},
 
+{
+  "nome": "titanic", 
+  "imagem": "pages/em breve/img/Titanic_3D.jpg", 
+  "link": "pages/Catálogo/catalogo.html"
+}
 ]
