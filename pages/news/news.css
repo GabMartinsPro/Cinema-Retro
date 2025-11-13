@@ -314,12 +314,23 @@ section h3 span p{
     }
     
     body {
-        padding-top: 180px; 
+        padding-top: 130px; 
         background-color: #000000 ;
     }
-
+    /*Para sumir o gif no mobile*/
     .introduction .row .image .img{
         display: none;
+    }
+
+    /*Garantir que o container não ocupe espaço desnecessário*/
+    .introduction .row .image{
+        display: none;
+    }
+
+    /*Para o conteúdo do texto da introdução ocupe 100% da largura*/
+    .introduction .row .content{
+        flex: 1 1 100%;
+        margin-left: 0;
     }
 
     /* 1. Header Fixo: Layout em duas linhas */
