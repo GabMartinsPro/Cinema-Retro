@@ -232,24 +232,21 @@ body {
     cursor: pointer; 
 }
 
-/* Filme o exterminador */
+/*--------------------- Filme o exterminador-------------------------*/
 
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/img\ o\ exterminador.webp);
+    background-image:linear-gradient(rgba(13, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(img/img\ o\ exterminador.webp);
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
     width: 100px;
 }
 .info-filme-exterminador {
-    color: white;
+    color: rgb(246, 246, 246);
     padding: 30px;
     border-radius: 10px;
-    position: absolute;
-    top: 17%;     
-    left: 62%;
+    position: center;
+    top: 15%;     
+    left: 60%;
     
 }
 h3 {
@@ -259,6 +256,80 @@ h3 {
     text-align: right;
     font-family: 'Metal Mania', cursive;
     text-shadow: 3px 3px 7px black;
-    margin-top: 70px;
+    margin-top: 30px;
+}
+/* ---------------Sinopse do filme1 -----------------*/
+.sinopse {
+    text-align: right;
+    text-align: justify;
+    margin-top: 40px; /* altura entre o título e a sinopse */
+    font-size: 15px; /* tamanho da fonte */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.50; /* espaçamento entre linhas */
+    color: rgb(213, 212, 212);
+    text-shadow: 3px 3px 7px black;
+    max-width: 450px; /* diminui para ter mais linhas */
+    margin-left: 100px;
+}
+/* ---------------genero do filme1 -----------------*/
+.genero {
+    text-align: right;
+    text-align: left;
+    margin-top: -10px;
+    font-size: 15px; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(138, 138, 138);
+    text-shadow: 3px 3px 7px black;
+    margin-left: 300px;
+}
+/* ---------------duração do filme1 -----------------*/
+.duração {
+    text-align: right;
+    text-align:left;
+    margin-top: -10px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(138, 138, 138);
+    text-shadow: 3px 3px 7px black;
+    margin-left: 300px;
+}
+/* ---------------elenco do filme1 -----------------*/
+.elenco {
+    text-align: right;
+    text-align:left;
+    margin-top: -10px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(138, 138, 138);
+    text-shadow: 3px 3px 7px black;
+    margin-left: 300px;
+}
+/* ---------------avaliação do filme1 -----------------*/
+.avaliação {
+    text-align: right;
+    text-align:left;
+    margin-top: -10px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 7px black;
+    margin-left: 250px;
+}
+/* ---------------classificação do filme1 -----------------*/
+.classificação {
+    display: flex;
+    justify-content: flex-end; /* alinha à direita */
+    align-items: center;       
+    gap: 5px;                  /* espaço entre texto e imagem */
+}
+
+.poster-filme-exterminador {
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+    margin: 0; /* remove margens antigas */
 }
 

@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Limelight&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-      <div class="menu-lateral" id="menuLateral"> <!--Menu lateral-->
+      <div class="menu-lateral" id="menuLateral"> <!------Menu lateral------->
         <a href="javascript:void(0)" class="fechar-btn" onclick="fecharMenu()">&times;</a>
         <h2>Navegação</h2>
         <a href="pages/Catalogo/catalogo.html">Catálogo</a>
@@ -22,9 +23,9 @@
         <a href="pages/news/news.html">News</a>
         <a href="#">Contato</a>
         <a href="#">Ajuda</a>
-                  </div><!--fim Menu lateral-->
+                  </div><!-------fim Menu lateral------->
         
-           <header class="cabecalho-fixo"> <!--Cabeçalho-->
+           <header class="cabecalho-fixo"> <!--------Cabeçalho--------->
         <div class="conteudo-cabecalho">
             <button class="menu-hamburguer" onclick="abrirMenu()">
                 &#9776; </button>
@@ -50,37 +51,57 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-            <div class="barra-busca"><!--barra busca-->
+            <div class="barra-busca"><!------barra busca------->
                 <input type="text" placeholder="Buscar um filme no telão..." aria-label="Barra de busca">
                 <button type="submit">🔎</button>
-            </div><!--fim barra busca-->
+            </div><!-------fim barra busca------->
             <div class="placeholder-nav"></div>
         </div>
-        </header><!--fim cabeçalho-->
+        </header><!------fim cabeçalho------->
 
 
-        <!--Inicio do catálogo-->
+        <!--------Inicio do catálogo--------->
 
 
-        <!--Filme 1-->
+        <!--------Filme 1--------->
         <section id="exterminador"><br>
             <div class="info-filme-exterminador">
                 <div>
-                    <h3>O exterminador</h3>
-                    <p class="sinopse">Sinopse</p>
-                    <p class="elenco">Elenco</p>
-                    <p class="duração">Duração e data de Lançamento</p>
-                    <p class="genero">Genero</p>
-                    <p class="avaliação">Avaliação</p>
-                    <p class="classificação">Classificação Indicativa</p>
+                    <h3>O exterminador do Futuro</h3>
+                    <p class="sinopse"> O Exterminador do Futuro conta a história de Sarah Connor, 
+                        que passa a ser perseguida por um robô assassino enviado do futuro.
+                        Um soldado também é enviado para protege-lá, porque o filho que ela terá um dia será fundamental na luta dos humanos contra as máquinas.
+                    </p><br><br>
+                    <p class="genero">• Gênero: Ação/Ficção Científica</p>
+                    <p class="duração">• 25 de Março de 1984/1h 47min</p>
+                    <p class="elenco">• Elenco: Arnold Schwarzenegger, Linda Hamilton, Michael Biehn</p>
+                    <p class="avaliação">⭐️⭐️⭐️⭐️4.6</p>
+                    <p class="classificação"><img src="img/14mais.png" alt="Classificação 14 anos mais" class="poster-filme-exterminador"></p>
                 </div>
             </div>
-    
-
-        </section>
-
         
+        </section>
+        <!--------Fim do filme 1--------->
 
+        <!--------Filme 2--------->
+        <section id="velocidade maxima">
+            <div class="info-filme-velocidade">
+                <div>
+                    <h3>Velocidade Máxima</h3>
+                    <p class="sinopse"> Velocidade Máxima é um filme de ação que segue a história de um policial disfarçado, 
+                        Jack Traven, que deve impedir que um ônibus cheio de passageiros exploda.
+                        O ônibus está equipado com uma bomba que será detonada se a velocidade cair abaixo de 50 milhas por hora.
+                    </p><br><br>
+                    <p class="genero">• Gênero: Ação/Suspense</p>
+                    <p class="duração">• Data: 10 de Junho de 1994/Duração: 1h 56min</p>
+                    <p class="elenco">• Elenco: Keanu Reeves, Sandra Bullock, Dennis Hopper</p>
+                    <p class="avaliação">⭐️⭐️⭐️⭐️3.7</p>
+                    <p class="classificação"><img src="img/14mais.png" alt="Classificação 14 anos mais" class="poster-filme-velocidade"></p>
+                </div>
+            </div>
+        </section>
+        <!--------Fim do filme 2--------->
+        
 </body>
 <script src="/script.js"></script>
 </html>
