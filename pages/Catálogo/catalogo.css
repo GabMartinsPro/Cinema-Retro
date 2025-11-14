@@ -232,104 +232,63 @@ body {
     cursor: pointer; 
 }
 
-/*--------------------- Filme o exterminador-------------------------*/
+/*--------------------- Filmes-------------------------*/
 
 body {
-    background-image:linear-gradient(rgba(13, 13, 13, 0.5), rgba(0, 0, 0, 0.5)), url(img/img\ o\ exterminador.webp);
-    background-size: cover;
-    height: 100vh;
-    width: 100px;
-}
-.info-filme-exterminador {
-    color: rgb(246, 246, 246);
-    padding: 30px;
-    border-radius: 10px;
-    position: center;
-    top: 15%;     
-    left: 60%;
-    
-}
-h3 {
-    color: #893737;
-    font-size: 80px;
-    text-align: end;
-    text-align: right;
-    font-family: 'Metal Mania', cursive;
-    text-shadow: 3px 3px 7px black;
-    margin-top: 30px;
-}
-/* ---------------Sinopse do filme1 -----------------*/
-.sinopse {
-    text-align: right;
-    text-align: justify;
-    margin-top: 40px; /* altura entre o título e a sinopse */
-    font-size: 15px; /* tamanho da fonte */
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.50; /* espaçamento entre linhas */
-    color: rgb(213, 212, 212);
-    text-shadow: 3px 3px 7px black;
-    max-width: 450px; /* diminui para ter mais linhas */
-    margin-left: 100px;
-}
-/* ---------------genero do filme1 -----------------*/
-.genero {
-    text-align: right;
-    text-align: left;
-    margin-top: -10px;
-    font-size: 15px; 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(138, 138, 138);
-    text-shadow: 3px 3px 7px black;
-    margin-left: 300px;
-}
-/* ---------------duração do filme1 -----------------*/
-.duração {
-    text-align: right;
-    text-align:left;
-    margin-top: -10px;
-    font-size: 15px;
-    margin-top: 5px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(138, 138, 138);
-    text-shadow: 3px 3px 7px black;
-    margin-left: 300px;
-}
-/* ---------------elenco do filme1 -----------------*/
-.elenco {
-    text-align: right;
-    text-align:left;
-    margin-top: -10px;
-    font-size: 15px;
-    margin-top: 5px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(138, 138, 138);
-    text-shadow: 3px 3px 7px black;
-    margin-left: 300px;
-}
-/* ---------------avaliação do filme1 -----------------*/
-.avaliação {
-    text-align: right;
-    text-align:left;
-    margin-top: -10px;
-    font-size: 15px;
-    margin-top: 5px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 7px black;
-    margin-left: 250px;
-}
-/* ---------------classificação do filme1 -----------------*/
-.classificação {
-    display: flex;
-    justify-content: flex-end; /* alinha à direita */
-    align-items: center;       
-    gap: 5px;                  /* espaço entre texto e imagem */
+    background-image: linear-gradient(rgba(48, 7, 7, 0.5));
 }
 
-.poster-filme-exterminador {
-    width: 30px;
-    height: auto;
-    border-radius: 5px;
-    margin: 0; /* remove margens antigas */
+/*-------------- Container geral-------------- */
+.filmes-retro {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+    padding: 30px;
 }
+
+/*-------------- Card de cada filme-------------- */
+.card-filme {
+    display: flex;
+    gap: 25px;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.4);
+}
+
+/*-------------- Imagem-------------- */
+.card-filme img {
+    border-radius: 10px;
+}
+
+/*-------------- Título-------------- */
+.card-filme h3 {
+    color: #893737;
+    font-size: 35px;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 3px 3px 7px black;
+    margin-bottom: 10px;
+}
+
+/*---------------Sinopse--------------*/
+.card-filme .sinopse {
+    color: rgb(213, 212, 212);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 7px black;
+}
+
+/*---------------Informações gerais--------------*/
+.card-filme p {
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    margin: 3px 0;
+    text-shadow: 3px 3px 7px black;
+}
+
+
+
+
 
