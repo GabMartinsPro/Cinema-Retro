@@ -319,7 +319,7 @@ height: 20px;
 /* Título com efeito neon dourado */
 .Em-Breve h2 {
   font-family: 'Courier New', monospace;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #ffcc00;
   text-shadow: 
     0 0 5px #ffcc00,
@@ -331,7 +331,7 @@ height: 20px;
   margin-left: 20px; /* espaçamento do canto esquerdo */
   letter-spacing: 1px;
   text-transform: uppercase;
-  animation: brilho 0.5s infinite alternate;
+  animation: brilho 0.25s infinite alternate;
 }
 
 /* animação de pulsar */
@@ -393,66 +393,60 @@ height: 20px;
 }
 
 .lancamentos-filmes {
-  background-color: #1a0000;
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
-  border-top: 3px solid #5a0000;
-  border-bottom: 3px solid #5a0000;
+  margin-top: 40px;
+  padding: 20px;
 }
 
 .lancamentos-filmes h2 {
-  font-size: 28px;
+  color: #ffdddd;
+  font-size: 26px;
   margin-bottom: 20px;
-  text-shadow: 0 0 8px #ff0000;
-  letter-spacing: 1px;
+  border-left: 5px solid #ff4444;
+  padding-left: 10px;
 }
 
-.faixa-em-breve {
-  display: flex;
+.grid-lancamentos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
   gap: 20px;
-  overflow-x: auto;
-  padding: 10px 20px;
-  
 }
 
-.faixa-em-breve::-webkit-scrollbar {
-  height: 10px;
-}
-
-.faixa-em-breve::-webkit-scrollbar-thumb {
-  background-color: #600000;
+.grid-lancamentos .filme {
+  background: #2a0000;
+  padding: 12px;
   border-radius: 10px;
+  border: 1px solid #5a0000;
+  color: white;
+  text-align: left;
 }
 
-.filme-breve {
-  flex: 0 0 200px;
-  background-color: #2b0000;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px #000;
-  text-align: center;
+.grid-lancamentos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
-.filme-breve img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.filme-breve h3 {
+.grid-lancamentos h3 {
+  font-size: 18px;
   margin-top: 10px;
-  font-size: 16px;
-  color: #ff4d4d;
+  color: #ffcccc;
 }
 
-.filme-breve span {
-  color: #999;
+.grid-lancamentos h3 span {
+  color: #ff9999;
 }
 
-.filme-breve p {
+.grid-lancamentos .sinopse {
   font-size: 14px;
-  color: #ccc;
-  margin-top: 5px;
+  margin: 8px 0;
+  color: #f5d5d5;
 }
+
+.grid-lancamentos .duracao,
+.grid-lancamentos .lancamento,
+.grid-lancamentos .classificacao {
+  font-size: 13px;
+  margin: 3px 0;
+  color: #ffbbbb;
+}
+
