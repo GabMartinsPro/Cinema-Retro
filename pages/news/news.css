@@ -16,7 +16,7 @@
 }
 body {
     font-family: 'Playfair Display', serif;
-    background-color: var(--bg-color);
+    background-color: black;
     color: var(--text-color);
     padding-top: 120px; /* Mantém o espaço para o cabeçalho fixo */
 }
@@ -193,6 +193,7 @@ body {
     cursor: pointer; 
 }
 
+/*---------- Início banner ----------*/
 section{
     padding: 2rem 5%;
 }
@@ -216,12 +217,14 @@ section h3 span p{
 .btn:hover{
     background: var(--retro-red);
 }
+/*---------- end banner ----------*/
 
+/*---------- Início home ----------*/
 #home{
     display: flex;
     align-items: center;
     min-height: 80vh;
-    background: url("img/banner-horror.jpg") no-repeat;
+    background: url("./img/banner-oz.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -231,37 +234,38 @@ section h3 span p{
 }
 
 #home .content h3{
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--retro-red);
-    font-family: "Creepster", system-ui;
+    font-family: "Limelight", system-ui;
 }
 
 #home .content span{
     font-size: 1.4rem;
-    color: var(--retro-red);
+    color: rgb(253, 253, 154);
     padding: 1rem 0;
     line-height: 1.0;
 }
 
 #home .content p{
-    font-size: 0.9rem;
+    font-size: 18px;
     color: #999;
     padding: 1rem 0;
     line-height: 1.5;
 }
+/*---------- end home ----------*/
 
 /*Inicio do heading*/
 .heading{
     text-align: center;
     font-size: 4rem;
-    color: #333;
+    color: #ff060650;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 51, 0.103);
+    background: rgb(17, 0, 0);
 }
 
 .heading span{
-    color: var(--retro-red);
+    color: #fff;
 }
 
 .introduction .row{
@@ -270,7 +274,7 @@ section h3 span p{
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 3rem 0;
     padding-bottom: 3rem;
 }
 
@@ -280,12 +284,21 @@ section h3 span p{
     position: absolute;
 }
 
+.img_marilyn {
+    width: 600px;
+    border: 0.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 420px;
+    object-fit: cover;
+}
+
 .introduction .row .image .img{
-    width: 100%;
+    width: 10px;
     border: 1.5rem solid #333;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    height: 100%;
+    height: 10px;
     object-fit: cover;
 }
 
@@ -301,7 +314,7 @@ section h3 span p{
 
 .introduction .row .content{
     flex: 1 1 40rem;
-    margin-left: 50%;
+    margin-left: 52%;
 }
 
 /*Fim do heading*/
