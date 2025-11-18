@@ -122,5 +122,185 @@
   "nome": "Titanic-candidato ao relançamento (vote)", 
   "imagem": "pages/em breve/img/Titanic_3D.jpg", 
   "link": "pages/Catálogo/catalogo.html"
+},
+
+{
+  "nome": "Batman-candidato ao relançamento (vote)", 
+  "imagem": "pages/em breve/img/bat.jpeg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Star Wars-candidato ao relançamento (vote)", 
+  "imagem": "pages/em breve/img/star3.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Jurassic Park-candidato ao relançamento (vote)", 
+  "imagem": "pages/em breve/img/dino.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "De volta para o Futuro-candidato ao relançamento (vote)", 
+  "imagem": "pages/em breve/img/future.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Os Incríveis", 
+  "imagem": "pages/em breve/img/incri2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Missão Impossível 3", 
+  "imagem": "pages/em breve/img/MI.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Homem de Ferro", 
+  "imagem": "pages/em breve/img/ferro.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+
+{
+  "nome": "Piratas do Caribe : O baú da Morte", 
+  "imagem": "pages/em breve/img/piratas.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Procurando Nemo", 
+  "imagem": "pages/em breve/img/nemo2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Ratatouille", 
+  "imagem": "pages/em breve/img/rato2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "UP-Altas Venturas", 
+  "imagem": "pages/em breve/img/up3.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Eu, Robô", 
+  "imagem": "pages/em breve/img/robo.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Guerra dos Mundos", 
+  "imagem": "pages/em breve/img/guerra2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Distrito 9", 
+  "imagem": "pages/em breve/img/distrito3.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Avatar", 
+  "imagem": "pages/em breve/img/avatar.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Menina de Ouro", 
+  "imagem": "pages/em breve/img/avatar.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "O curioso caso de Benjamin Button", 
+  "imagem": "pages/em breve/img/curioso2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Sempre ao seu Lado(HACHIKO)", 
+  "imagem": "pages/em breve/img/sempre.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "A Rede Social", 
+  "imagem": "pages/em breve/img/RDSC2.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+
+{
+  "nome": "Escola de Rock", 
+  "imagem": "pages/em breve/img/rock.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "As Branquelas", 
+  "imagem": "pages/em breve/img/branquelas2.jpg", 
+  "link": "pages/em breve/embreve.html"
+} ,
+
+{
+  "nome": "SuperBad-É Hoje", 
+  "imagem": "pages/em breve/img/bad.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Se Beber Não Case!", 
+  "imagem": "pages/em breve/img/case.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "O Chamado", 
+  "imagem": "pages/em breve/img/chamado.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "O Grito", 
+  "imagem": "pages/em breve/img/grito.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "O Grito", 
+  "imagem": "pages/em breve/img/grito.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Atividade Paranormal", 
+  "imagem": "pages/em breve/img/paranormal.jpg", 
+  "link": "pages/em breve/embreve.html"
 }
+
+{
+  "nome": "A Órfã", 
+  "imagem": "pages/em breve/img/orfa.jpg", 
+  "link": "pages/em breve/embreve.html"
+},
+
+{
+  "nome": "Jogos Vorazes", 
+  "imagem": "pages/em breve/img/vorazes2.jpg", 
+  "link": "pages/em breve/embreve.html"
+}
+
+
+
+
 ]
