@@ -239,35 +239,61 @@ body {
 }
 
 /*-------------- Container geral-------------- */
+.grid-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  border: 2px solid #561515;
+  box-shadow: 0 0 10px #561515, 0 0 25px #561515;
+}
+
+/*-------------- Seção de filmes retrô-------------- */
 .filmes-retro {
     display: flex;
     flex-direction: column;
-    gap: -10px;
+    gap: 0px;
     padding: 30px;
 }
 
-/*-------------- Card de cada filme-------------- */
+/*-------------- Card dos filmes-------------- */
 .card-filme {
+    gap: 20px;
     display: flex;
-    gap: 25px;
-    background: #1a1a1a;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(33, 33, 33, 0.4);
+    flex-direction: column;
+    background: #280202;
+    padding: 25px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform .2s ease, box-shadow .2s ease;
+    border: 3px solid #370e0e; 
+}
+.card-filme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
 }
 
 /*-------------- Imagem-------------- */
 .card-filme img {
-    border-radius: 10px;
+    width: 100%;
+    max-width: 280px;
+    height: 280px; 
+    border-radius: 5px;
 }
 
 /*-------------- Título-------------- */
 .card-filme h3 {
-    color: #893737;
-    font-size: 35px;
+    font-size: 28px;
+    margin: 0;
     font-family: 'Metal Mania', cursive;
     text-shadow: 3px 3px 7px black;
     margin-bottom: 10px;
+    line-height: 1.2;
+     color: #cab052;
+    text-shadow:
+        0 0 6px rgba(207, 181, 38, 0.647),
+        0 0 12px rgba(239, 212, 103, 0.59);
 }
 
 /*---------------Sinopse--------------*/
@@ -276,7 +302,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     max-width: 500px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-shadow: 3px 3px 7px black;
 }
 
@@ -284,7 +310,7 @@ body {
 .card-filme p {
     color: rgb(138, 138, 138);
     font-size: 12px;
-    margin: 3px 0;
+    margin: 4px 0;
     text-shadow: 3px 3px 7px black;
 }
 
