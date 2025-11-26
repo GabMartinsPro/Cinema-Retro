@@ -104,38 +104,24 @@
   </div>
 </section>
 
-<main>
-<section class="votacao">
+<button id="toggleVotacao" class="botao-votacao">
+  ▶ Votar no Filme do Mês
+</button>
 
-  <button id="abrirVotacao" class="btn-votar">🗳️ Votar no Filme do Mês</button>
-<div id="meuElemento" style="display: none;">
-<section id="votacao-section">
-  <!-- lista de filmes + botões + ranking + timer -->
-</section>
-  <div id="lista-filmes"></div>
+<section id="votacaoSection" style="display: none;">
 
-  <!-- Contador de tempo -->
-  <div id="temporizador"></div>
-
-  <!-- Resultados -->
-  <h3>Ranking Parcial</h3>
-  <div id="ranking"></div>
-</section>
-
-<section id="votacaoSection" class="votacao" style="display: none;">
   <h2>Filmes Indicados do Mês</h2>
 
-  <div id="lista-filmes"></div>
-
-  <div id="temporizador"></div>
-
-  <h3>Ranking Parcial</h3>
-  <div id="ranking"></div>
-
+  <div id="lista-filmes-votar"></div>
+  <div id="temporizador" class="temporizador"></div>
+  <div id="vencedor-final" class="vencedor-final"></div>
   
+  <h3>Ranking Parcial</h3>
+  <div id="ranking-votar"></div>
+
 </section>
 
-</main>
+
 
 <section id="em-breve" class="Em-Breve">
   <h2>Em Breve</h2>
@@ -448,14 +434,6 @@
 </div>
 </section>
 
-
-
-
-
-
-<script src="votacao.js"></script>
-
-
-<script src="embreve.js"></script>
+<script src="../embreve/embreve.js"></script>
 </body>
 </html>
