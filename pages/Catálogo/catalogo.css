@@ -238,6 +238,7 @@ body {
     background-image: linear-gradient(rgba(48, 7, 7, 0.5));
 }
 
+
 /*-------------- Título do catálogo-------------- */
 .titulo-catalogo {
     text-align: center;
@@ -367,10 +368,10 @@ body {
 
 /*----------- Botão de enviar ----------*/
 button {
-  padding: 10px 18px;
+  padding: 10px 10px;
   margin-left: 10px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #ffcc00;
   color: #000;
   font-size: 11px;
@@ -393,62 +394,107 @@ button {
 @media (max-width: 768px) {
     
     body {
-        padding-top: 180px; 
+        padding-top: 130px; 
+        background-color: #1a0a0a;
     }
 
-    /* 1. Header Fixo: Layout em duas linhas */
+    /* Header fixo */
     .conteudo-cabecalho {
-        padding: 10px 15px;
-        flex-wrap: wrap;
+        display: flex;
         justify-content: space-between;
-        align-items: stretch;
-    }
-
-    /* 2. Menu Hamburguer (Exibir) */
-    .menu-hamburguer {
-        display: block;
-        order: 1; 
-    }
-
-    /* 3. Logotipo (Ajustar posição no mobile) */
-    .logotipo {
-        order: 2; 
-        font-size: 1.8em;
-        text-align: center;
-        flex-grow: 1;
-    }
-    
-    /* 4. Barra de Busca (Centralizada na segunda linha) */
-    .barra-busca {
-        order: 4; 
-        padding: 5px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
         width: 100%;
     }
-    .barra-busca input {
-        width: 80%;
-    }
 
-    /* 5. Navegação Desktop (Esconder) */
+    /* Esconde menu desktop */
     .nav-principal-desktop {
         display: none;
     }
     .placeholder-nav {
         display: none;
     }
-    
-    /* 6. Listas de Filmes (Ajustar para 1 ou 2 por linha) */
-    .lista-filmes {
-        gap: 15px;
-        justify-content: space-around;
+
+    /* Menu hamburguer */
+    .menu-hamburguer {
+         display: block;
+    position: absolute; 
+    top: 6px;
+    left: 10px;
+    font-size: 1em;
+    z-index: 3000;
     }
-    .cartao-filme {
-        width: 45%; 
-        max-width: 180px;
+    
+    /* logotipo e barra de pesquisa em coluna */
+    .logotipo {
+        order: 2;
+        font-size: 1.5em;
+        text-align: center;
+        flex-grow: 1;
     }
 
-    /* 7. Banner (Ajustar altura no mobile) */
-    .banner-principal img {
-        height: auto;
+    /* Barra de busca embaixo do logo */
+    .barra-busca {
+        order: 4;
+        padding: 5px 0;
+        width: 100%;
     }
+    .barra-busca input {
+        width: 80%;
+        font-size: 10px;
+    }
+    
+    /* Barra de pesquisa centralizada */
+    .barra-pesquisa {
+        width: 80%;
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    #buscaGenero {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+
+    /* Grid do catálogo */
+    .grid-catalogo {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Cards dos filmes */
+    .card-filme {
+        padding: 18px;
+        width: 100%;
+    }
+
+    .card-filme img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .card-filme h3 {
+        font-size: 25px;
+    }
+
+    .card-filme .sinopse {
+        font-size: 14px;
+    }
+
+    .card-filme p {
+        font-size: 12px;
+    }
+
 }
 

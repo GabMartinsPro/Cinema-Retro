@@ -1,3 +1,12 @@
+// --- Funções do Menu Lateral --- //
+
+function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+}
+
+function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+}
 
 // Função utilitária: normaliza texto //
 function normalizeText(str) {
@@ -52,6 +61,7 @@ function buscarGenero() {
     }
   });
 }
+
 
 
 // Dispara a busca enquanto o usuário digita //
