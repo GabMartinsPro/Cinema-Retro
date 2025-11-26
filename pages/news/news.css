@@ -262,10 +262,12 @@ section h3 span p{
     padding: 1rem;
     margin: 2rem 0;
     background: rgb(17, 0, 0);
+    font-family: "Limelight", system-ui;
 }
 
 .heading span{
     color: #fff;
+    font-family: "Limelight", system-ui;
 }
 
 .introduction .row{
@@ -321,32 +323,55 @@ section h3 span p{
 
 /*----------Início dos icones----------*/ 
 
-.icones-container li {
+.icones-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+#avaliacao {
+    width: 100px;
+    height: 100px;
     display: inline-block;
-    
 }
 
-.icones-container nav li{
-    display: block;
-    text-decoration: none;
-    color: #f0f0f0;
-    list-style-type: none;
+#comentario {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  
 }
-
-.icones-container nav li:visited{
-    color: #f0f0f0;
-}
-
-.icones-container li img{
-    
-    width: 50px;
-    height: 50px;
-
-}
-
-
 
 /*----------Fim dos icones----------*/ 
+
+
+/*----------Início do box ----------*/ 
+
+.noticias .box-container{
+    /* Aplica Flexbox ao PARENT (o novo, único .box-container) */
+    display: flex;
+    /* Permite quebra de linha para que os itens passem para a próxima linha se não houver espaço */
+    flex-wrap: wrap; 
+    /* Adiciona espaço entre os itens */
+    gap: 1.5rem;
+    /* Opcional: Para centralizar o grupo de itens no pai maior */
+    justify-content: center;
+}
+
+.box-container img{
+    width: 250px;
+    height: 250px;
+}
+
+.noticias .box-container .box{
+    text-align: center;
+    /* Ajustei o border: 1px para um padrão CSS válido */
+    padding: 1.5rem; /* Reduzi o padding de 5rem para evitar boxes muito grandes */
+}
+
+/*----------Fim do box----------*/ 
 
 /* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
 @media (max-width: 768px) {

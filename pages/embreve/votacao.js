@@ -1,3 +1,13 @@
+document.getElementById('btn-votar').addEventListener('click', function() {
+  document.getElementById('meuElemento').style.display = 'block'; // Ou 'flex', 'grid', etc.
+});
+
+document.getElementById('btnFechar').addEventListener('click', function() {
+  document.getElementById('meuElemento').style.display = 'none';
+});
+
+
+
 // Filmes participantes
 const filmes = [
   "Titanic",
@@ -72,15 +82,5 @@ setInterval(atualizarTemporizador, 1000);
 atualizarTemporizador();
 
 const votacaoSection = document.getElementById("votacaoSection");
-const abrirBtn = document.getElementById("abrirVotacao");
-const fecharBtn = document.getElementById("fecharVotacao");
 
-abrirBtn.addEventListener("click", () => {
-  votacaoSection.style.display = "block";
-  window.scrollTo({ top: votacaoSection.offsetTop, behavior: "smooth" });
-});
-
-fecharBtn.addEventListener("click", () => {
-  votacaoSection.style.display = "none";
-});
 
