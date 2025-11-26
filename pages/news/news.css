@@ -293,6 +293,8 @@ section h3 span p{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 420px;
     object-fit: cover;
+    margin-left: 20%;
+    margin-top: 4rem;
 }
 
 .introduction .row .image .img{
@@ -302,6 +304,7 @@ section h3 span p{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 10px;
     object-fit: cover;
+    
 }
 
 .introduction .row .h3{
@@ -316,7 +319,8 @@ section h3 span p{
 
 .introduction .row .content{
     flex: 1 1 40rem;
-    margin-left: 52%;
+    margin-left: 50%;
+    font-size: 25px;
 }
 
 /*Fim do heading*/
