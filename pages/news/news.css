@@ -349,7 +349,7 @@ section h3 span p{
 
 /*----------Início do box ----------*/ 
 
-.noticias .box-container{
+#noticias .box-container{
     /* Aplica Flexbox ao PARENT (o novo, único .box-container) */
     display: flex;
     /* Permite quebra de linha para que os itens passem para a próxima linha se não houver espaço */
@@ -365,7 +365,7 @@ section h3 span p{
     height: 250px;
 }
 
-.noticias .box-container .box{
+#noticias .box-container .box{
     text-align: center;
     /* Ajustei o border: 1px para um padrão CSS válido */
     padding: 1.5rem; /* Reduzi o padding de 5rem para evitar boxes muito grandes */
@@ -373,12 +373,99 @@ section h3 span p{
 
 /*----------Fim do box----------*/ 
 
+/*----------Início da review----------*/ 
+
+/* Limita o tamanho dos ícones principais de citação e usuário */
+
+/* Estilização do Título Principal */
+.review .title {
+    /* Centraliza o título */
+    text-align: center; 
+    /* Adiciona margem abaixo do título para criar o espaçamento */
+    margin-bottom: 5rem; /* Aumentei o espaçamento aqui (ajuste 5rem se for demais) */
+    /* Define o tamanho da fonte */
+    font-size: 3rem; 
+    /* Adiciona uma cor base */
+    color: #fff; 
+    /* Adiciona um pequeno padding interno para respirar */
+    padding: 1rem 0;
+}
+
+/* Estilização da palavra "Cinéfilos" (dentro do <span>) */
+.review .title span {
+    /* Exemplo: Cor amarela/laranja para destaque */
+    color: #ffc107; 
+    /* Opcional: Efeito de texto com sombra para destacar em fundos escuros */
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.5); 
+}
+#reviews .box-container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start; /* Garante que as caixas se alinhem ao topo se tiverem alturas diferentes */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    box-sizing: border-box; /* Importante para padding e border não adicionarem largura extra */
+}
+
+#reviews .box-container .box{
+    text-align: center;
+    padding: 1.5rem; 
+    flex: 1 1 300px; /* Crucial: Grow, Shrink, Basis */
+    max-width: 400px; /* Garante que não fiquem excessivamente grandes */
+    min-width: 280px; /* Impede que fiquem muito pequenas */
+    background: #1a1a1a; 
+    border: 1px solid #333; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Também importante aqui */
+}
+
+/* CONTROLE DE TAMANHO DOS ELEMENTOS INTERNOS */
+
+/* Para o ícone de citação e o ícone de usuário */
+
+#reviews .box-container .box > img {
+    width: 6rem; 
+    height: auto;
+    margin: 1rem 0;
+    object-fit: contain; /* Garante que a imagem não seja cortada se a proporção mudar */
+}
+
+/* Para as estrelas (que estão dentro de uma <div>) */
+#reviews .box-container .box div img {
+    width: 2rem; 
+    height: 2rem;
+    object-fit: contain;
+    margin: 0 0.1rem; 
+    vertical-align: middle; /* Ajuda a alinhar as estrelas */
+}
+
+#reviews .box-container .box p {
+    font-size: 1rem;
+    color: #fff; 
+    padding: 0.5rem 0.5rem; /* Ajustei o padding para o texto */
+    line-height: 1.5; /* Melhorar legibilidade */
+}
+
+#reviews .box-container .box h3 {
+    color: #fff; /* Cor para o nome */
+    margin-top: 0.5rem;
+}
+
+/*----------Fim da review----------*/ 
+
+
 /* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
 @media (max-width: 768px) {
     #home{
         background-image: none;
     }
     
+    .icones-container{
+        
+    }
+
     body {
         padding-top: 130px; 
         background-color: #000000 ;
