@@ -232,33 +232,18 @@ body {
     cursor: pointer; 
 }
 
-/*--------------------- Filmes-------------------------*/
+/*--------------------- Filmes do catálogo-------------------------*/
 
 body {
     background-image: linear-gradient(rgba(48, 7, 7, 0.5));
 }
-/*-------------- Título do catálogo-------------- */
-@keyframes pulsar {
-    0% {
-        transform: scale(1);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-    }
-    50% {
-        transform: scale(1.15); 
-        text-shadow: 
-            0 0 25px rgba(228, 212, 146, 0.7),
-            0 0 45px rgba(228, 212, 146, 0.9); 
-    }
-    100% {
-        transform: scale(1);
-        text-shadow: 0 0 10px rgba(235, 212, 99, 0.919);
-    }
-}
 
+
+/*-------------- Título do catálogo-------------- */
 .titulo-catalogo {
     text-align: center;
     font-family: 'Metal Mania', cursive;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 20px;
     color: rgb(228, 212, 146);
     letter-spacing: 1px;
@@ -270,8 +255,14 @@ body {
         0 0 12px rgba(239, 212, 103, 0.59);
     
 }
-.pulsante {
-    animation: pulsar 5.5s infinite ease-in-out;
+/*---------------Efeitos do destaque--------------*/
+.filtro-genero{
+    outline: 3px solid gold;
+      border-radius: 10px;
+      padding: 8px;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,.12);
+      transition: transform .15s ease, box-shadow .15s ease;
 }
 
 /*-------------- Container geral-------------- */
@@ -345,12 +336,165 @@ body {
 /*---------------Informações gerais--------------*/
 .card-filme p {
     color: rgb(138, 138, 138);
-    font-size: 12px;
-    margin: 4px 0;
+    font-size: 13px;
+    margin: -2px 0;
     text-shadow: 3px 3px 7px black;
 }
 
+.card-filme p:not(.sinopse) {
+    text-align: left;
+    width: 100%;
+}
+/*---------------Barra de pesquisa--------------*/
 
+/*----------- Caixa da busca ------------*/
+#buscaGenero {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #422c2c;
+  background-color: #1a1a1a;
+  color: #ffcc00;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
 
+/*---------- Efeito quando o usuário clica ----------*/
+#buscaGenero:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px #ffcc00;
+}
 
+/*----------- Botão de enviar ----------*/
+button {
+  padding: 10px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/*----------- Container pra deixar alinhado -------------*/
+.barra-pesquisa {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+
+/* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
+@media (max-width: 768px) {
+    
+    body {
+        padding-top: 130px; 
+        background-color: #1a0a0a;
+    }
+
+    /* Header fixo */
+    .conteudo-cabecalho {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    /* Esconde menu desktop */
+    .nav-principal-desktop {
+        display: none;
+    }
+    .placeholder-nav {
+        display: none;
+    }
+
+    /* Menu hamburguer */
+    .menu-hamburguer {
+         display: block;
+    position: absolute; 
+    top: 6px;
+    left: 10px;
+    font-size: 1em;
+    z-index: 3000;
+    }
+    
+    /* logotipo e barra de pesquisa em coluna */
+    .logotipo {
+        order: 2;
+        font-size: 1.5em;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    /* Barra de busca embaixo do logo */
+    .barra-busca {
+        order: 4;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .barra-busca input {
+        width: 80%;
+        font-size: 10px;
+    }
+    
+    /* Barra de pesquisa centralizada */
+    .barra-pesquisa {
+        width: 80%;
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    #buscaGenero {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+
+    /* Grid do catálogo */
+    .grid-catalogo {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Cards dos filmes */
+    .card-filme {
+        padding: 18px;
+        width: 100%;
+    }
+
+    .card-filme img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .card-filme h3 {
+        font-size: 25px;
+    }
+
+    .card-filme .sinopse {
+        font-size: 14px;
+    }
+
+    .card-filme p {
+        font-size: 12px;
+    }
+
+}
 
