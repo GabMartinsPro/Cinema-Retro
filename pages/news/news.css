@@ -466,9 +466,38 @@ section h3 span p{
         background-image: none;
     }
     
-    .icones-container{
+    #home .content h3{
+    font-size: 3rem;
+}
+
+    .introduction .row .content{
+        font-size: 1rem;
+    }
+
+  /* 1. Faz o título ser menor */
+    .review .title {
+        font-size: 2.5rem; 
+        margin-bottom: 3rem; /* Diminui o espaçamento */
+    }
+    
+    /* 2. Faz as caixas ocuparem 100% da largura */
+    #reviews .box-container .box{
+        /* Força a largura total, garantindo que apenas 1 coluna apareça */
+        flex: 1 1 100%; 
+        max-width: 100%; /* Adiciona um pequeno padding nas laterais */
+        min-width: 100%; /* Remove o mínimo para permitir flexibilidade */
+    }
+    
+    /* Opcional: Diminui o tamanho dos elementos internos para caberem melhor */
+    #reviews .box-container .box > img {
+        width: 8rem; 
+        height: 8rem;
+    }
+    #reviews .box-container .box div img {
+        width: 1.8rem; 
         
     }
+}
 
     body {
         padding-top: 130px; 
