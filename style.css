@@ -254,7 +254,7 @@ body {
 }
 
 .espacador {
-    height: 15vh;
+    height: 6vh;
 }
 
 .secao-genero {
@@ -385,7 +385,7 @@ body {
 .cartao-filme h3 { color: var(--accent-color); margin-bottom: 5px; }
 .avaliacao { font-weight: bold; }
 
-/* ------------------ EFEITO DE LUZ RETRÔ (mantido) ------------------ */
+/* ------------------ EFEITO DE LUZ RETRÔ ------------------ */
 .retro-secao-clara::before {
     content: '';
     position: absolute; 
@@ -413,8 +413,52 @@ body {
 .retro-secao-clara:hover {
     box-shadow: 0 0 50px 10px rgba(255, 215, 0, 0.7); 
 }
+/* ------------------ FOOTER ------------------ */
+.movie-talk-footer {
+    background-color: #333; /* Cor de fundo escura (cinza) */
+    color: #d0ff00; 
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box; 
+}
 
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
 
+.rights-reserved {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.social-button {
+    color: #333; 
+    background-color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.social-button:hover {
+    background-color: #ff0000; /* Cor de destaque ao passar o mouse */
+    color: #fff; /* Ícone branco ao passar o mouse */
+    box-shadow: 0 0 25px yellow;
+}
 /* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
 @media (max-width: 768px) {
     

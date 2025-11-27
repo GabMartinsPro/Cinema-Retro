@@ -291,7 +291,8 @@ section h3 span p{
 }
 
 .img_marilyn {
-    margin-top: 150px;
+    margin-top: 70px;
+    margin-left: 200px;
     width: 600px;
     border: 0.5rem;
     border-radius: .5rem;
@@ -329,6 +330,7 @@ section h3 span p{
 /*----------Início dos icones----------*/ 
 
 .icones-container{
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,7 +455,52 @@ section h3 span p{
 }
 
 /*----------Fim do box----------*/ 
+/* ------------------ FOOTER ------------------ */
+.movie-talk-footer {
+    background-color: #333; /* Cor de fundo escura (cinza) */
+    color: #d0ff00; 
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box; 
+}
 
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.rights-reserved {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.social-button {
+    color: #333; 
+    background-color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.social-button:hover {
+    background-color: #ff0000; /* Cor de destaque ao passar o mouse */
+    color: #fff; /* Ícone branco ao passar o mouse */
+    box-shadow: 0 0 25px yellow;
+}
 /* ------------------ RESPONSIVIDADE (SMARTPHONES) ------------------ */
 @media (max-width: 768px) {
     #home{

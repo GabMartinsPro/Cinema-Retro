@@ -8,7 +8,7 @@ function fecharMenu() {
     document.getElementById("menuLateral").style.width = "0";
 }
 
-// --- Funções das Seções (Acordeão) ---
+// --- Funções das Seções ---
 
 document.addEventListener('DOMContentLoaded', () => {
     const sectionTitles = document.querySelectorAll('.secao-titulo');
